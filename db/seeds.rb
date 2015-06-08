@@ -10,4 +10,5 @@ User.create!(firstname: "Jan",
              lastname: "Kowalski",
              password: "password",
              password_confirmation: "password",
-             email: "asd@asd.com")
+             email: "asd@asd.com",
+             admin: true)

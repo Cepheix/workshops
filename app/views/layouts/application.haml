@@ -13,8 +13,23 @@
       .container-fluid
         .navbar-header
           %span.navbar-brand #{AppConfig.workshops_name}
-        %p.navbar-text.navbar-right
-          Links should go here
+        %nav.navbar-text.navbar-right
+          %btn
+            = link_to "Home", root_path
+          - if user_signed_in?
+            %btn.dropdown
+              %a{:href => "#", :class => "dropdown-toggle", "data-toggle" => "dropdown" }
+                Account
+                %b.caret
+              %ul.dropdown-menu
+                %li
+                  = link_to "Edit", edit_user_registration_path
+                %li.divider
+                %li
+                  = link_to "Log out", destroy_user_session_path, method: :delete
+          - else
+            %btn
+              = link_to "Log in", new_user_session_path
     .container-fluid
       .row
         .col-lg-12
