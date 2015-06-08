@@ -12,3 +12,24 @@ User.create!(firstname: "Jan",
              password_confirmation: "password",
              email: "asd@asd.com",
              admin: true)
+
+Category.create!(name: "films")
+
+Product.create!(title: "Hobbit",
+                description: "fantasy",
+                price: 15,
+                user_id: 1)
+Product.create!(title: "Black hawk down",
+                description: "war film",
+                price: 20.00,
+                user_id: 1)
+
+Review.create!(content: "Great film",
+               rating: 5.0,
+                user_id: 1,
+                product_id: 1)
+
+Review.create!(content: "Quite good",
+               rating: 4.0,
+               user_id: 1,
+               product_id: 1)
