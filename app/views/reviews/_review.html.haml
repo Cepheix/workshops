@@ -1,4 +1,6 @@
-%p= review.content
-%p
-  %b= review.rating
+%blockquote
+  %p
+    %em= review.content
+  - review.rating.times do |n|
+    %span.glyphicon.glyphicon-glass
   %em= review.author
