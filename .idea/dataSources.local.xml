@@ -13,5 +13,8 @@
       <schema-pattern>workshops_test.pg_catalog workshops_test.public</schema-pattern>
       <default-schemas>workshops_test.pg_catalog workshops_test.public</default-schemas>
     </data-source>
+    <data-source name="Rails workshops-master: production" uuid="d671e87c-7595-4742-a166-dd4a8b1a05cb">
+      <first-sync>true</first-sync>
+    </data-source>
   </component>
 </project>

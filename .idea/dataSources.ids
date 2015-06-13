@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="Rails workshops-master: development" uuid="456f0b23-2efe-4f9b-8e28-53cd6f790e5f">
-    <database-info product="PostgreSQL" version="9.3.8" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4 (build 1100)">
+    <database-info product="PostgreSQL" version="9.3.9" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4 (build 1100)">
       <identifier-quote-string>&quot;</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
@@ -18047,7 +18047,7 @@
     </procedure>
   </data-source>
   <data-source name="Rails workshops-master: test" uuid="73884ea2-4c7f-452d-96bf-46bdfb471d16">
-    <database-info product="PostgreSQL" version="9.3.8" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4 (build 1100)">
+    <database-info product="PostgreSQL" version="9.3.9" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4 (build 1100)">
       <identifier-quote-string>&quot;</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
@@ -36091,5 +36091,8 @@
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
+  </data-source>
+  <data-source name="Rails workshops-master: production" uuid="d671e87c-7595-4742-a166-dd4a8b1a05cb">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>
