@@ -8,7 +8,6 @@ class ProductsController < ApplicationController
   before_action :signed_in_user, only: [:create, :update, :destroy]
 
   def index
-    @products = Product.all
   end
 
   def show
@@ -65,5 +64,9 @@ class ProductsController < ApplicationController
   def signed_in_user
     redirect_to new_user_session_path,
                 notice: "You are not logged in" unless user_signed_in?
+  end
+
+  def owner
+    current_user != product.user
   end
 end
