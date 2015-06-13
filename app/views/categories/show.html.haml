@@ -1,13 +1,19 @@
 %p#notice= notice
-
+%h1= category.name.capitalize
 %table.table.table-bordered
   %tr
+    %th Title
+    %th Description
+    %th Price
     %th
-      = category.name.capitalize
+    %th
+    %th
 
   - category.products.each do |product|
     %tr
       %td= product.title
+      %td= product.description
+      %td= product.price
       %td= link_to 'Show', category_product_path(category, product)
       - if current_user == product.user || current_user.try(:admin?)
         %td= link_to 'Edit', edit_category_product_path(category, product)
