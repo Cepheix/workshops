@@ -20,7 +20,7 @@
         %td= link_to 'Destroy', category_product_path(category, product), method: :delete, data: { confirm: 'Are you sure?' }
 %div.row
   %div.col-md-6.col-md-offset-3
-    %h3 New product
+    %h3 Add new product
     = render 'products/form'
 
     = link_to 'Edit', edit_category_path(category), class: 'btn btn-primary'

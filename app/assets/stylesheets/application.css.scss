@@ -15,6 +15,22 @@
   vertical-align: middle;
 }
 
+.fields_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text
+  }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
 h2 {
   text-align: center;
   margin-bottom: 15px;
